@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <script src="bank.js"></script>
+</head>
+<body style="background-color: black;">
+    <h1 style="color: orange;">SBI</h1>
+    <center><h3 style="color: orange;">LOGIN</h3>
+    <p style="color: white;">Don't have an account?
+    <a href="rgstr.html" type="button" class="btn btn-warning">Open Here </p></a>
+    </center>
+    <form>
+        <table>
+    <tr>
+        <td style="color: white;" >ACCOUNT NUMBER:</td>
+        <td> <input type=" text " placeholder="enter your account number" id="acno">
+         </td>
+         <tr>
+            <td style="color: white;" >PASSWORD:</td>
+            <td> <input type="password" placeholder="enter password" id="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"> </td>
+        </tr>
+    </table>
+    </form><br><br>
+    
+        <input type="button" class="btn button" onclick="Bank.login()" value="login"><br><br><br><br><br>
+        <center>
+        <p style="color: white;">Contact Us</p><p style="color: white;">PH:00001234</p><p style="color: white;">email@support.sbi.co.in</p>
+        </center>
+
+    
+</body>
+</html>
